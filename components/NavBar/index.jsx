@@ -48,7 +48,7 @@ export const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/studies">
+            <Link href="/catering">
               <a className={styles.menuItem}>Case Studies</a>
             </Link>
           </li>
@@ -77,7 +77,7 @@ export const NavBar = () => {
           </li>
           <li>
           {/* <li onClick={handleClick}> */}
-            <Link href="/studies">
+            <Link href="/catering">
               <a>Case Studies</a>
             </Link>
           </li>
