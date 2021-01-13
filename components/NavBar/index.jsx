@@ -1,55 +1,49 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import Link from 'next/link';
 // import { useRouter } from 'next/router';
-
-// import { useScrollState, useScrollDispatch } from '../../lib/scrollContext';
 import styles from './navBar.module.css';
+// import { useScrollState } from '../../lib/scrollContext';
 
 export const NavBar = () => {
-//   const globalState = useScrollState();
-//   const dispatch = useScrollDispatch();
-//   const router = useRouter();
+  const [open, setOpen] = React.useState(false);
+  const [active, setActive] = React.useState(false);
+  //   const globalState = useScrollState();
+  //   const router = useRouter();
 
-//   const headerStyles = {
-//     backgroundColor: globalState.heroIsInView ? 'transparent' : 'white',
-//     boxShadow: globalState.heroIsInView
-//       ? null
-//       : 'rgba(0, 0, 0, 0.25) 0px 2px 2px, rgba(0, 0, 0, 0.22) 0px 0px 0px',
-//   };
+  //   const headerStyles = {
+  //     backgroundColor: globalState.heroIsInView ? 'transparent' : 'white',
+  //     boxShadow: globalState.heroIsInView
+  //       ? null
+  //       : 'rgba(0, 0, 0, 0.25) 0px 2px 2px, rgba(0, 0, 0, 0.22) 0px 0px 0px',
+  //   };
 
-//   const noHomeStyles = {
-//     backgroundColor: 'white',
-//   };
+  //   const noHomeStyles = {
+  //     backgroundColor: 'white',
+  //   };
 
-//   const handleClick = () => {
-//     dispatch({
-//       type: 'toggleBurger',
-//     });
-//   };
-
-//   const burgerStyles = globalState.heroIsInView
-//     ? styles.burger
-//     : styles.burgerBlack;
+  const handleClick = () => {
+    setOpen(!open);
+    setActive(!active);
+  };
 
   return (
     <header
       className={styles.navBarContainer}
-    //   style={router.pathname === '/' ? headerStyles : noHomeStyles}
+      // style={router.pathname === '/' ? headerStyles : noHomeStyles}
     >
       <Link href="/">
-        <a className={styles.logo}>V-Studio</a>
+        <a className={styles.logo}>Temple</a>
       </Link>
       <nav className={styles.nav}>
         <ul className={styles.menuContainer}>
           <li>
             <Link href="/about">
-              <a className={styles.menuItem}>About Us</a>
+              <a className={styles.menuItem}>About</a>
             </Link>
           </li>
           <li>
             <Link href="/catering">
-              <a className={styles.menuItem}>Case Studies</a>
+              <a className={styles.menuItem}>Catering</a>
             </Link>
           </li>
           <li>
@@ -60,35 +54,33 @@ export const NavBar = () => {
         </ul>
       </nav>
       <button
-        // onClick={handleClick}
+        onClick={handleClick}
         className={styles.burgerButton}
         type="button"
       >
-        {/* <span className={globalState.open ? styles.burgerOpen : burgerStyles} /> */}
+        <span className={open ? styles.burgerOpen : styles.burger} />
       </button>
 
-      {/* <div className={globalState.active ? styles.menuBurger : styles.menu}> */}
+      <div className={active ? styles.menuBurger : styles.menu}>
         <ul className={styles.menuBurgerInner}>
-          {/* <li onClick={handleClick}> */}
           <li>
             <Link href="/about">
-              <a>About Us</a>
+              <a>About</a>
             </Link>
+            NavBar
           </li>
           <li>
-          {/* <li onClick={handleClick}> */}
             <Link href="/catering">
-              <a>Case Studies</a>
+              <a>Catering</a>
             </Link>
           </li>
           <li>
-          {/* <li onClick={handleClick}> */}
             <Link href="/contact">
               <a>Contact</a>
             </Link>
           </li>
         </ul>
-      {/* </div> */}
+      </div>
     </header>
   );
 };
