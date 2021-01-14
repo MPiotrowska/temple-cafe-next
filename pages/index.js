@@ -1,18 +1,20 @@
 // import Head from 'next/head';
-import { Container } from '../components/Container';
+import { Container } from "../components/Container";
+import { Hero } from "../components/Hero";
 // import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  return <Container>Home</Container>;
+  return (
+    <>
+     
+       <Hero />
+       <Container>
+         blabla bla
+ </Container>
+     
+    </>
+  );
 }
-
-
-
-
-
-
-
-
 
 // import Head from "next/head"
 // import { Component } from 'react'
