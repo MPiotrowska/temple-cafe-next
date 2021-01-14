@@ -16,10 +16,7 @@ export const NavBar = () => {
   //       ? null
   //       : 'rgba(0, 0, 0, 0.25) 0px 2px 2px, rgba(0, 0, 0, 0.22) 0px 0px 0px',
   //   };
-
-  //   const noHomeStyles = {
-  //     backgroundColor: 'white',
-  //   };
+  
 
   const handleClick = () => {
     setOpen(!open);
