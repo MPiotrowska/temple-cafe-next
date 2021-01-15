@@ -12,6 +12,7 @@ export const NavBar = () => {
 
   const headerStyles = {
     backgroundColor: globalState.heroIsInView ? 'transparent' : 'white',
+    color:globalState.heroIsInView ? 'white' : 'black', 
     boxShadow: globalState.heroIsInView
       ? null
       : 'rgba(0, 0, 0, 0.25) 0px 2px 2px, rgba(0, 0, 0, 0.22) 0px 0px 0px',
