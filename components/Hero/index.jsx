@@ -7,8 +7,7 @@ import {  Container} from "../Container";
 import { useScrollDispatch } from '../../lib/scrollContext';
 
 // styles
-// import styles from '../../styles/home.module.css';
-import styles from './hero.module.css'
+import styles from "./hero.module.css"
 import containerStyles from '../Container/container.module.css';
 
 
@@ -25,12 +24,12 @@ export const Hero = () => {
   <InView as="div" onChange={handleChange}>
     <img className={styles.heroImage} src="/img/hero.jpg" alt="coffee" />
   </InView>
-  <Container className={containerStyles.heroText}>
-    <Container className={containerStyles.heroStandard}>
+  <Container className={styles.heroText}>
+    <Container className={styles.heroStandard}>
      
-      {/* <Link href="/contact">
+      <Link href="/contact">
         <a className={styles.buttonLink}>Contact</a>
-      </Link> */}
+      </Link>
     </Container>
   </Container>
 </Container>)}

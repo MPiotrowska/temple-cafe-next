@@ -1,20 +1,3 @@
-/* html,
-body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-} */
-
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -91,27 +74,4 @@ p {
   padding: 80px 20px;
 }
 
-/* .slick-next:before {
-  background-image: url('../public/images/right-chevron.svg')!important;
-  background-repeat: no-repeat;
-  color: transparent!important;
-}
-
-.slick-prev:before {
-  background-image: url('../public/images/left-chevron.svg')!important;
-  background-repeat: no-repeat;
-  color: transparent!important;
-}
-
-@media only screen and (max-width: 600px) {
-  .slick-arrow {
-    top: 95%;
-  }
-  .slick-next {
-    right: 80px!important;
-  }
-  .slick-prev {
-    left: 80px!important;
-  }
-} */
 
