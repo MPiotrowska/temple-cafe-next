@@ -1,0 +1,44 @@
+.footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer img {
+    margin-left: 0.5rem;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .caseTitle {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-right: 20px;
+  }
+  
+  .caseTitle:hover {
+    text-decoration: underline;
+  } 
+  
+  @media only screen and (max-width: 600px) {
+    .footer{
+      max-width: 75%;
+      margin: auto;
+     }
+     .caseTitle {
+       font-size: 12px;
+       padding-right: 0;
+       min-width: 80px;
+     }
+  } 
+  
