@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './footer.module.css';
+import data from "../../mocks/data.json"
 
 export const Footer = () => {
   return (
@@ -22,24 +23,24 @@ export const Footer = () => {
       </a>
 
       <a
-        href="https://www.instagram.com/"
+        href={data.instagram.url}
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          src="images/icon-instagram.svg"
-          alt="Vercel Logo"
+          src={data.instagram.image}
+          alt={data.instagram.altText}
           // className={styles.logo}
         />
       </a>
       <a
-        href="https://www.linkedin.com/"
+        href={data.facebook.url}
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
-          src="images/icon-linkedin.svg"
-          alt="Vercel Logo"
+          src={data.facebook.image}
+          alt={data.facebook.altText}
           // className={styles.logo}
         />
       </a>
