@@ -7,6 +7,7 @@ import { useScrollDispatch } from "../../lib/scrollContext";
 
 // styles
 import styles from "./hero.module.css";
+import { HeroContact } from "../HeroContact";
 
 
 export const Hero = () => {
@@ -23,6 +24,7 @@ export const Hero = () => {
       </InView>
       <Container className={styles.heroText}>
         <Container className={styles.heroStandard}>
+          <HeroContact/>
           <Link href="/contact">
             <a className={styles.buttonLink}>Contact</a>
           </Link>
