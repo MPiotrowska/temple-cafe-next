@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './heroContact.module.css'
 
 export const HeroContact = () => {
     return (
@@ -13,17 +14,18 @@ export const HeroContact = () => {
         }}
       >
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-unique-background "
-          style={{
-            // boxShadow:
-            //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            // // backgroundColor: 'rgb(255, 68, 0)',
+          // className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-unique-background "
+          className={styles.hasUniqueBackground }> Whatever
+        {/* //   style={{
+        //     // boxShadow:
+        //     //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+        //     // // backgroundColor: 'rgb(255, 68, 0)',
            
-          }}
-        >
-          {title}
+        //   }}
+        // >
+        //   {title} */}
         </h1>
-        <h3
+        {/* <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             // boxShadow:
@@ -52,7 +54,7 @@ export const HeroContact = () => {
           {optionalText}
         </h3>
 
-       <Button href="/contact" text="Contact"/>
+       <Button href="/contact" text="Contact"/> */}
       </div>
     
     )
