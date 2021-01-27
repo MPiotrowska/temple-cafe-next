@@ -7,3 +7,13 @@
   max-width: 1280px;
 }
 
+.half {
+  width: 50%;
+  display: flex;
+  height: 150px;
+  line-height: 1;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+}
+
