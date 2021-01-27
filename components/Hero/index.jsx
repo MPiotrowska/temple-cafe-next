@@ -22,13 +22,13 @@ export const Hero = () => {
       <InView as="div" onChange={handleChange}>
         <img className={styles.heroImage} src="/img/hero.jpg" alt="coffee" />
       </InView>
-      <Container className={styles.heroText}>
-        <Container className={styles.heroStandard}>
+      <Container fullWidth className={styles.heroText}>
+        {/* <Container className={styles.half}> */}
           <HeroContact/>
           <Link href="/contact">
             <a className={styles.buttonLink}>Contact</a>
           </Link>
-        </Container>
+        {/* </Container> */}
       </Container>
     </Container>
   );
