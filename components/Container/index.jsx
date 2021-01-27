@@ -10,7 +10,9 @@ export const Container = ({
   return (
     <div
       {...props}
-      className={`wrapper ${className} $`}
+      className={`wrapper ${className} ${
+  fullWidth ? styles.fullWidth : styles.standard
+}`}
     >
       {children}
     </div>
