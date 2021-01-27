@@ -1,18 +1,11 @@
 import React from 'react'
+import { Container } from '../Container'
 import styles from './heroContact.module.css'
 
 export const HeroContact = () => {
     return (
-            <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
+      <Container className="half">
+
         <h1
           // className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-unique-background "
           className={styles.hasUniqueBackground }> Whatever
@@ -55,7 +48,7 @@ export const HeroContact = () => {
         </h3>
 
        <Button href="/contact" text="Contact"/> */}
-      </div>
+      </Container>
     
     )
 }
