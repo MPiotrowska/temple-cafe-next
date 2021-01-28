@@ -1,14 +1,12 @@
 import React from "react";
-import Link from "next/link";
+
 import { InView } from "react-intersection-observer";
 import { Container } from "../Container";
-
 import { useScrollDispatch } from "../../lib/scrollContext";
 
 // styles
 import styles from "./hero.module.css";
 import { HeroContact } from "../HeroContact";
-
 
 export const Hero = () => {
   const dispatch = useScrollDispatch();
@@ -23,12 +21,7 @@ export const Hero = () => {
         <img className={styles.heroImage} src="/img/hero.jpg" alt="coffee" />
       </InView>
       <Container fullWidth className={styles.heroText}>
-        {/* <Container className={styles.half}> */}
-          <HeroContact/>
-          <Link href="/contact">
-            <a className={styles.buttonLink}>Contact</a>
-          </Link>
-        {/* </Container> */}
+        <HeroContact />
       </Container>
     </Container>
   );
