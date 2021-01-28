@@ -24,3 +24,10 @@
     transition: background-color .3s ease,transform .3s ease,-webkit-transform .3s ease,-o-transform .3s ease;
   
   }
+
+  .address {
+    text-align: center;
+    margin: 30px auto;
+    color: white;
+
+  }
