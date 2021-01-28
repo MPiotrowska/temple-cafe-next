@@ -1,25 +1,21 @@
-import React from 'react';
-import styles from './container.module.css';
+import React from "react";
+import styles from "./container.module.css";
 
 export const Container = ({
   children,
   fullWidth,
-  className = '',
+  className = "",
+  alignment = "center",
   ...props
 }) => {
   return (
     <div
       {...props}
-      className={`wrapper ${className} ${
-  fullWidth ? styles.fullWidth : styles.standard
-}`}
+      className={`wrapper wrapper-${alignment} ${className} ${
+        fullWidth ? styles.fullWidth : styles.standard
+      }`}
     >
       {children}
     </div>
   );
 };
-
-
-// className={`wrapper ${className} ${
-//   fullWidth ? styles.fullWidth : styles.standard
-// }`}
