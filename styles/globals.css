@@ -70,8 +70,17 @@ p {
 }
 
 .wrapper {
-  margin: auto;
   padding: 80px 20px;
 }
 
+.wrapper-center {
+  margin: auto;
+}
 
+.wrapper-right {
+  margin-left: auto;
+}
+
+.wrapper-left {
+  margin-right: auto;
+}

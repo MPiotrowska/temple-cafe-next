@@ -10,10 +10,12 @@
 .half {
   width: 50%;
   display: flex;
-  height: 150px;
+  border: 1px solid white;
   line-height: 1;
   justify-content: space-around;
   align-items: left;
   flex-direction: column;
+ 
+  
 }
 
