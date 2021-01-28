@@ -9,7 +9,7 @@ import containerStyles from "../Container/container.module.css";
 
 export const HeroContact = () => {
   return (
-    <Container className={containerStyles.half}>
+    <Container className={containerStyles.half} alignment="right">
       <h1 className={styles.hasUniqueBackground}> Whatever</h1>
 
       <Link href="/contact">
