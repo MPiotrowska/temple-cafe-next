@@ -76,7 +76,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 31px;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .nav {
@@ -199,8 +199,5 @@
     align-items: flex-start;
   }
 
-  .logo {
-    font-size: 25px;
-  }
   
 }
