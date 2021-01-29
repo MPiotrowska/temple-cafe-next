@@ -10,7 +10,7 @@ const Contact = () => {
     <Container>
       <Container>
        
-     
+     <Form/>
       </Container>
     </Container>
   );
