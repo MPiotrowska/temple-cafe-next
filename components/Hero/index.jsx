@@ -3,6 +3,7 @@ import React from "react";
 import { InView } from "react-intersection-observer";
 import { Container } from "../Container";
 import { useScrollDispatch } from "../../lib/scrollContext";
+import data from "../../mocks/data.json";
 
 // styles
 import styles from "./hero.module.css";
@@ -18,7 +19,7 @@ export const Hero = () => {
   return (
     <Container fullWidth style={{ position: "relative" }}>
       <InView as="div" onChange={handleChange}>
-        <img className={styles.heroImage} src="/img/hero.jpg" alt="coffee" />
+        <img className={styles.heroImage} src={data.hero.image} alt="coffee" />
       </InView>
       <Container fullWidth className={styles.heroText}>
         <HeroContact />
