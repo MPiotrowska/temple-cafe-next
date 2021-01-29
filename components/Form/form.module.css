@@ -26,17 +26,29 @@
     border: none;
     outline:none;
     border-bottom: 1px solid gray;
-    color:#fff;
+   
     font-size: 18px;
     margin-bottom: 16px;
-}
-
-.input {
     height: 45px;
 }
 
- .submit {
-    background: #ff5722;
+
+
+.messageControl{
+    max-width: 600px;
+    background: transparent;
+    border: none;
+    outline:none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    margin-bottom: 16px;
+    resize: vertical;
+    /* resize: horizontal; */
+
+}
+
+ .submitButton{
+    background: hsl(291, 78%, 40%);
     border-color: transparent;
     color:  #fff;
     font-size: 20px;
@@ -45,9 +57,17 @@
     height: 50px;
     margin-top: 20px;
 
+    width: 600px;
+   
+    border: none;
+    outline:none;
+    
+   
+
+
 }
 
-.submit:hover {
-    background-color: #f44336;
+.submitButton:hover {
+    background-color:hsl(291, 78%, 33%);
     cursor: pointer;
 }
