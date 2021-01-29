@@ -5,7 +5,14 @@
       { "image": "/img/facebook.svg", "url": "https://www.facebook.com/templecafechalkwellpark/", "altText": "facebook" },
     
     "instagram": 
-        { "image": "/img/instagram.svg", "url": "https://www.instagram.com/temple_cafe_chalkwell/", "altText": "instagram" }
+        { "image": "/img/instagram.svg", "url": "https://www.instagram.com/temple_cafe_chalkwell/", "altText": "instagram" },
+
+    
+
+    "hero":
+    { "image": "/img/coffee-medium.jpg"}
+
+    
      
       
 }
