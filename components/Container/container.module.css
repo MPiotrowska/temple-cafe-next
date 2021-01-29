@@ -10,7 +10,6 @@
 .half {
   width: 50%;
   display: flex;
-  border: 1px solid white;
   line-height: 1;
   justify-content: space-around;
   align-items: left;
