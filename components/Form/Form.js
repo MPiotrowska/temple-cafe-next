@@ -7,23 +7,23 @@ import styles from "./form.module.css";
 
 export const Form = () => {
   return (
-    < Container className="contactForm">
+    < Container className={styles.half}>
     <form name="contact" action="/success" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact" />
       <p>
         <label htmlFor="yourname">Your Name:</label> <br />
-        <input className={styles.formControl}type="text" name="name" id="yourname" />
+        <input className={styles.formControl} type="text" name="name" id="yourname"  required/>
       </p>
       <p>
         <label htmlFor="youremail">Your Email:</label> <br />
-        <input className={styles.formControl} type="email" name="email" id="youremail" />
+        <input className={styles.formControl} type="email" name="email" id="youremail" required />
       </p>
       <p>
         <label htmlFor="yourmessage">Message:</label> <br />
-        <textarea name="message" id="yourmessage"></textarea>
+        <textarea className={styles.messageControl} name="message" id="yourmessage" rows="4"></textarea>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button className={styles.submitButton} type="submit">Send Message</button>
       </p>
     </form>
     </Container>
@@ -31,13 +31,5 @@ export const Form = () => {
 };
 
 
-{/* <div class="contact-form">
-<form id="contact-form" method="post" action="contact-form-handler.php"></form>
-<input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-<input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-<textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
-<input type="submit" class="form-control submit" value="SEND MESSAGE"><br>
-
-</div> */}
 
 
