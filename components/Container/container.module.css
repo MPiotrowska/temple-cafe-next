@@ -18,3 +18,12 @@
   
 }
 
+.fortyPercent {
+  width: 40%;
+}
+
+.flex {
+  display: flex;
+  border: 1px solid red;
+}
+

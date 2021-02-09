@@ -6,6 +6,7 @@ export const Container = ({
   fullWidth,
   className = "",
   alignment = "center",
+  flex = false,
   ...props
 }) => {
   return (
@@ -13,7 +14,7 @@ export const Container = ({
       {...props}
       className={`wrapper wrapper-${alignment} ${className} ${
         fullWidth ? styles.fullWidth : styles.standard
-      }`}
+      } ${flex ? styles.flex : ""}`}
     >
       {children}
     </div>

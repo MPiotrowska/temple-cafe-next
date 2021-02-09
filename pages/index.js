@@ -1,16 +1,15 @@
 // import Head from 'next/head';
 import { Container } from "../components/Container";
 import { Hero } from "../components/Hero";
-// import styles from '../styles/Home.module.css';
+import { HomeAbout } from "../components/HomeAbout";
+// import styles from '../styles/global.css';
 
 export default function Home() {
   return (
     <>
      
        <Hero />
-       <Container>
-         blabla bla
- </Container>
+   <HomeAbout/>
  
      
     </>
