@@ -41,6 +41,7 @@ body {
   /* font-family: 'Lato', sans-serif; */
   font-family: 'Lora', serif;
   overflow-x: hidden;
+  background-color: #fbfbfb;
 }
 
 a {
