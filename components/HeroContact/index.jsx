@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import { Container } from "../Container";
-import data from "../../mocks/data.json"
+
 
 // styles
 import styles from "./heroContact.module.css";
