@@ -34,13 +34,30 @@
 }
 
 .cakeImageContainer {
-height: 500px;
-width: 250px;
+height: auto;
+width: 280px;
+
 }
 
 .cakeImage {
+
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.cafeImageContainer {
+    height:auto;
+    width: 280px;
+    margin-top: 40px;
+  
+}
+
+.cafeImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+    
 }
 
