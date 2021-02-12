@@ -6,7 +6,7 @@ import styles from './homeAbout.module.css';
 export const HomeAbout = () => {
   return (
     <Container flex>
-      <Container className={containerStyles.fortyPercent}>
+      <Container height className={containerStyles.fortyPercent}>
         <span className={styles.greeting}>Welcome to Temple Cafe</span>
         <h2 className={styles.intro}>
           Taste a delicious food and the best cakes in town
@@ -22,7 +22,7 @@ export const HomeAbout = () => {
           up of volunteers and staff.
         </p>
       </Container>
-      <Container className={containerStyles.half}>
+      <Container row height className={containerStyles.sixtyPercent}>
         <div className={styles.cakeImageContainer}>
           <img
             className={styles.cakeImage}
@@ -30,7 +30,7 @@ export const HomeAbout = () => {
             alt=""
           />
         </div>
-        <div>
+        <div className={styles.cafeImageContainer}>
           <img className={styles.cafeImage} src="img/temple_cafe.jpg" alt="" />
         </div>
       </Container>
