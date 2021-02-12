@@ -17,6 +17,6 @@ export const Container = ({
       } ${flex ? styles.flex : ""}`}
     >
       {children}
-    </div>
+   </div>
   );
 };
