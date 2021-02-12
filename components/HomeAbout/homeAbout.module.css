@@ -32,3 +32,15 @@
     color:  #404044;
   
 }
+
+.cakeImageContainer {
+height: 500px;
+width: 250px;
+}
+
+.cakeImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
