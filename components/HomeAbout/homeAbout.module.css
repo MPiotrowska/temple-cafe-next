@@ -11,5 +11,24 @@
 .about {
     color:#7d7d7d;
     font-weight: 400;
-    margin: 0 0 10px;
+    line-height: 27px;
+
+    /* margin: 0 0 10px;
+    display: block; */
+    margin-block-start: 1em;
+    /* margin-block-end: 1em; */
+    /* margin-inline-start: 0px;
+    margin-inline-end: 0px;
+     */
+}
+
+
+.intro {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.4;
+    /* position: relative; */
+    margin: 0 0 80px 0;
+    color:  #404044;
+  
 }
