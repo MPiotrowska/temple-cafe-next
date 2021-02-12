@@ -20,10 +20,22 @@
 
 .fortyPercent {
   width: 40%;
+  border: 1px solid red;
+}
+.sixtyPercent {
+  width: 60%;
+  border: 1px solid red;
 }
 
 .flex {
   display: flex;
   border: 1px solid red;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid red; */
+}
+
 

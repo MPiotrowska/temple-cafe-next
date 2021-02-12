@@ -1,12 +1,15 @@
-import React from "react";
-import styles from "./container.module.css";
+import React from 'react';
+import styles from './container.module.css';
 
 export const Container = ({
   children,
   fullWidth,
-  className = "",
-  alignment = "center",
+  className = '',
+  alignment = 'center',
   flex = false,
+  row = false,
+  height = '',
+
   ...props
 }) => {
   return (
@@ -14,9 +17,11 @@ export const Container = ({
       {...props}
       className={`wrapper wrapper-${alignment} ${className} ${
         fullWidth ? styles.fullWidth : styles.standard
-      } ${flex ? styles.flex : ""}`}
+      } ${flex ? styles.flex : ''} ${row ? styles.row : ''} ${
+        height ? styles.height : ''
+      }`}
     >
       {children}
-   </div>
+    </div>
   );
 };
